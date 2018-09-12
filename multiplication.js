@@ -14,4 +14,4 @@ $(function() {
       $("#line" + i).append($("<td>").text(i + "*" + j + "=" + result));
     }
   }
-})
+});
