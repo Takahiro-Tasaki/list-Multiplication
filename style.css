@@ -1,0 +1,32 @@
+body {
+  color: #004c8c;
+  font-family: arial, sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.multiplication {
+  border: solid 4px #004c8c;
+  border-collapse: collapse;
+}
+
+.multiplication tr,
+.multiplication td {
+  border: solid 1px #004c8c;
+}
+
+.multiplication caption {
+  text-align: center;
+}
+
+.multiplication td {
+  padding: 10px;
+}
+
+.multiplication tr:nth-child(odd) td:nth-child(even),
+.multiplication tr:nth-child(even) td:nth-child(odd) {
+  background-color: #f0f0f0;
+}
