@@ -8,10 +8,10 @@ $(function() {
     $taget = $("#multiplication");
     
   for(i = 1; i < 10; i++) {
-    $taget.append("<tr id='line" + i + "'></tr>");
+    $taget.append($("<tr>").attr("id", "line" + i));
     for(j = 1; j < 10; j++) {
       result = i * j;
-      $("#line" + i).append("<td>" + i + "*" + j + "=" + result + "</td>");
+      $("#line" + i).append($("<td>").text(i + "*" + j + "=" + result));
     }
   }
 })
